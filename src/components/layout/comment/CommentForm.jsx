@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Button, Grid, TextField, Typography } from "@mui/material";
 import { useMutation } from "@apollo/client";
-import { SEND_COMMENT } from "../graphql/mutations";
+import { SEND_COMMENT } from "../graphql/mutation";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

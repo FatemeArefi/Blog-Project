@@ -2,7 +2,7 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { GET_POST_COMMENTS } from "../graphql/queries";
 import { Avatar, Box, Grid, Typography } from "@mui/material";
-import Loader from "../shared/Loader";
+import Loader from "../Shared/Loader";
 
 const Comments = ({ slug }) => {
   const { loading, data, error } = useQuery(GET_POST_COMMENTS, {

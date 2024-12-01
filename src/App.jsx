@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from "./components/layout";
-import HomePage from "./components/home/HomePage";
+import HomePage from "./components/layout/Home/HomePage";
 import { Route, Routes } from "react-router-dom";
-import BlogPage from "./components/blog/BlogPage";
-import AuthorPage from "./components/authors/AuthorPage";
-import ScrollToTop from "./components/shared/ScrollToTop";
+import BlogPage from "./components/layout/Blog/BlogPage";
+import AuthorPage from "./components/layout/authors/AuthorPage";
+import ScrollToTop from "./components/layout/Shared/ScrollToTop";
 
 const App = () => {
   return (
