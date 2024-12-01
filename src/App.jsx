@@ -1,4 +1,3 @@
-import React from "react";
 import Layout from "./components/layout";
 import HomePage from "./components/layout/Home/HomePage";
 import { Route, Routes } from "react-router-dom";
@@ -12,7 +11,7 @@ const App = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/blogs/:slug" element={<BlogPage />} />
+        <Route path="/Blogs/:slug" element={<BlogPage />} />
         <Route path="/authors/:slug" element={<AuthorPage />} />
       </Routes>
     </Layout>
