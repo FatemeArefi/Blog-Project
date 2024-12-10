@@ -3,8 +3,8 @@ import sanitizeHtml from "sanitize-html";
 import { useParams } from "react-router-dom";
 import { GET_AUTHOR_INFO } from "../graphql/queries";
 import { Avatar, Container, Grid, Typography } from "@mui/material";
-import CardEL from "../Shared/CardEL";
-import Loader from "../Shared/Loader";
+import CardEL from "../shared/CardEL";
+import Loader from "../shared/Loader";
 
 const AuthorPage = () => {
   const { slug } = useParams();

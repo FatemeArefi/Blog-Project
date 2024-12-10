@@ -7,14 +7,16 @@ import ScrollToTop from "./components/layout/Shared/ScrollToTop";
 
 const App = () => {
   return (
-    <Layout>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/Blogs/:slug" element={<BlogPage />} />
-        <Route path="/authors/:slug" element={<AuthorPage />} />
-      </Routes>
-    </Layout>
+    <>
+      <Layout>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/Blogs/:slug" element={<BlogPage />} />
+          <Route path="/authors/:slug" element={<AuthorPage />} />
+        </Routes>
+      </Layout>
+    </>
   );
 };
 

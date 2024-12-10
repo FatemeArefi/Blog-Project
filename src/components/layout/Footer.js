@@ -13,7 +13,7 @@ const Footer = () => {
         textAlign="center"
         mt={10}
       >
-        Fateme Arefi
+        پروژه ی وبلاگ با GraphQL | فاطمه عارفی
       </Typography>
     </footer>
   );

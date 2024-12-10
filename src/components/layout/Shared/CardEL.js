@@ -9,10 +9,9 @@ import {
   Divider,
   Typography,
 } from "@mui/material";
-import React from "react";
 import { Link } from "react-router-dom";
 
-const CardEL = ({ title, slug, coverPhoto, author }) => {
+function CardEL({ title, slug, coverPhoto, author }) {
   return (
     <Card sx={{ boxShadow: "rgba(0,0,0,0.1) 0px 4px 12px", borderRadius: 4 }}>
       {author && (
@@ -36,7 +35,7 @@ const CardEL = ({ title, slug, coverPhoto, author }) => {
         <Typography
           component="h3"
           variant="h6"
-          color="text-primary"
+          color="text.primary"
           fontWeight={600}
           fontSize={18}
         >
@@ -60,6 +59,6 @@ const CardEL = ({ title, slug, coverPhoto, author }) => {
       </CardActions>
     </Card>
   );
-};
+}
 
 export default CardEL;

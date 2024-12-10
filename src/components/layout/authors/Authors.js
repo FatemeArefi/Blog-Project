@@ -3,9 +3,9 @@ import React from "react";
 import { GET_AUTHORS_INFO } from "../graphql/queries";
 import { Avatar, Divider, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import Loader from "../Shared/Loader";
+import Loader from "../shared/Loader";
 
-const Authors = () => {
+function Authors() {
   const { loading, data, error } = useQuery(GET_AUTHORS_INFO);
 
   if (loading) return <Loader />;
@@ -41,6 +41,6 @@ const Authors = () => {
       ))}
     </Grid>
   );
-};
+}
 
 export default Authors;
