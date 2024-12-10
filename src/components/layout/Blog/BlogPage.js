@@ -1,5 +1,4 @@
 import { useQuery } from "@apollo/client";
-import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { GET_POST_INFO } from "../graphql/queries";
 import Loader from "../Shared/Loader";
