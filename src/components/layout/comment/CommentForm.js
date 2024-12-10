@@ -6,7 +6,7 @@ import { SEND_COMMENT } from "../graphql/mutation";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const CommentForm = ({ slug }) => {
+function CommentForm({ slug }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
@@ -92,6 +92,6 @@ const CommentForm = ({ slug }) => {
       <ToastContainer />
     </Grid>
   );
-};
+}
 
 export default CommentForm;
