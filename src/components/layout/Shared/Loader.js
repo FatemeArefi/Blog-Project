@@ -1,6 +1,6 @@
 import { TailSpin } from "react-loader-spinner";
 
-const Loader = () => {
+function Loader() {
   return (
     <div
       style={{
@@ -15,13 +15,13 @@ const Loader = () => {
         height="100"
         width="100"
         radius="9"
-        color="green"
+        color="blue"
         ariaLabel="loading"
         wrapperStyle
         wrapperClassName
       />
     </div>
   );
-};
+}
 
 export default Loader;
