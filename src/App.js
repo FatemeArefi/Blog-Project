@@ -3,7 +3,7 @@ import HomePage from "./components/layout/Home/HomePage";
 import { Route, Routes } from "react-router-dom";
 import BlogPage from "./components/layout/Blog/BlogPage";
 import AuthorPage from "./components/layout/authors/AuthorPage";
-import ScrollToTop from "./components/layout/Shared/ScrollToTop";
+import ScrollToTop from "./components/layout/shared/ScrollToTop";
 
 const App = () => {
   return (

@@ -6,7 +6,7 @@ import { Avatar, Container, Grid, Typography } from "@mui/material";
 import CardEL from "../shared/CardEL";
 import Loader from "../shared/Loader";
 
-const AuthorPage = () => {
+function AuthorPage() {
   const { slug } = useParams();
 
   const { loading, data, error } = useQuery(GET_AUTHOR_INFO, {
@@ -65,6 +65,6 @@ const AuthorPage = () => {
       </Grid>
     </Container>
   );
-};
+}
 
 export default AuthorPage;
