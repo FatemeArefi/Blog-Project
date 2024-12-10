@@ -8,7 +8,7 @@ import sanitizeHtml from "sanitize-html";
 import CommentForm from "../comment/CommentForm";
 import Comments from "../comment/Comments";
 
-const BlogPage = () => {
+function BlogPage() {
   const { slug } = useParams();
   const navigate = useNavigate();
 
@@ -75,6 +75,6 @@ const BlogPage = () => {
       </Grid>
     </Container>
   );
-};
+}
 
 export default BlogPage;
