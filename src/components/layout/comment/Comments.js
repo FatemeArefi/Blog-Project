@@ -3,11 +3,11 @@ import { GET_POST_COMMENTS } from "../graphql/queries";
 import { Avatar, Box, Grid, Typography } from "@mui/material";
 import Loader from "../shared/Loader";
 
-const Comments = ({ slug }) => {
+function Comments({ slug }) {
   const { loading, data, error } = useQuery(GET_POST_COMMENTS, {
     variables: { slug },
   });
-  if (loading) return <Loader />;
+  if (loading) return null;
   return (
     <Grid
       container
@@ -46,6 +46,6 @@ const Comments = ({ slug }) => {
       </Grid>
     </Grid>
   );
-};
+}
 
 export default Comments;
